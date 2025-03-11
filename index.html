@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractional Knapsack</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <center>
+        <h1>Fractional Knapsack</h1>
+        <br>
+        <b>Max - Weight </b><input type="number" id="max"> 
+        <b>No of Items </b><input type="number" id="n">
+        <button onclick="storeInput()">Store</button>
+        <p id="storedData"></p>
+        <p id="rem"></p>
+        <br>
+        <br>
+        <form>
+            <table border="1px">
+                <tr>
+                    <td class="col">Item</td><td><input id="item" class="input"></td>
+                </tr>
+                <tr>
+                    <td class="col">Weight</td><td><input id="weight" class="input"></td>
+                </tr>
+                <tr>
+                    <td class="col">Profit</td><td><input id="profit" class="input"></td>
+                </tr>
+                <tr>
+                    <td class="bu" id="save"><button>ADD</button></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <table border="1px" id="result" class="answer">
+            <tr>
+                <td class="one"><b>ITEM</b></td>
+                <td class="one"><b>WEIGHT</b></td>
+                <td class="one"><b>PROFIT</b></td>
+                <td class="one" id="ans"><b>PROFIT/WEIGHT</b></td>
+                <td class="one">
+                    <b id="del">ACTION</b>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <button id="sort">Sort</button>
+    </center>
+    <center>
+        <p>Maximum Profit <button id="step">Step</button></p>
+        <form>
+            <table border="1px" id="final">
+                <tr>
+                    <td>Rem-Weight</td><td>Item</td><td>Profit</td>
+                </tr>
+            </table>
+        </form>
+        <h2 id="answer"></h2>
+    </center>
+    <script src="fun.js"></script>
+</body>
+</html>
